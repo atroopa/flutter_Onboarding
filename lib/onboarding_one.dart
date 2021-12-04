@@ -20,7 +20,9 @@ class OnBoardingOne extends StatelessWidget {
               ),
             ),
             Container(
-              
+              margin: EdgeInsets.only(left: 20.0, right: 20.0 , top: 34.0),
+              constraints: BoxConstraints.expand(height: 300.0),
+              width: MediaQuery.of(context).size.width,
             )
           ],
         ) 
