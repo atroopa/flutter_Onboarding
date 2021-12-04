@@ -12,9 +12,16 @@ class OnBoardingOne extends StatelessWidget {
             Container(
               padding: EdgeInsets.fromLTRB(24.4, 42.0, 24.4, 42.0),
               child: Row(
-                children: [],
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Image.asset("assets/back.png"),
+                  Text("Skip")
+                ],
               ),
             ),
+            Container(
+              
+            )
           ],
         ) 
         ),
