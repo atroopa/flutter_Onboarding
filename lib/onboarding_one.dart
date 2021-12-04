@@ -29,9 +29,39 @@ class OnBoardingOne extends StatelessWidget {
                   fit: BoxFit.cover
                 )
               ),
-            )
+            ),
+            Container(
+              margin: EdgeInsets.only(top: 20.0),
+              width: MediaQuery.of(context).size.width * 0.60,
+              child: FittedBox(
+                fit: BoxFit.fitHeight,
+                child: Text(
+                  "Visible changes in 3 weeks",
+                  style: TextStyle(
+                    fontSize: 40.0,
+                    fontWeight: FontWeight.bold
+                  ),
+                ),
+              ),
+            ),
+            Container(
+              padding: EdgeInsets.only(top: 80.0, bottom: 15.0, ),
+              child:  ElevatedButton(
+                onPressed: () {}, 
+                child: const Text('Get My Plan' , style: TextStyle(fontSize: 14, fontFamily: "Lato"),),
+                style: ElevatedButton.styleFrom(
+                primary: Colors.purple[400],
+                shape:RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(25.0)
+                ) ,
+                padding: const EdgeInsets.symmetric(horizontal: 40, vertical: 20),
+
+                ),
+                
+              ),
+            ),
           ],
-        ) 
+        ), 
         ),
     );
   }
